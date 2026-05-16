@@ -37,7 +37,7 @@ export function GitHubStatsSection() {
           </motion.div>
 
           {/* Stats Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-4 mb-12">
             {[
               { icon: GitFork, label: "Repositories", value: "50+" },
               { icon: Code2, label: "Contributions", value: "5+" },
