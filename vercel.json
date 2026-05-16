@@ -1,5 +1,7 @@
 {
-  "github": true,
+  "github": {
+    "enabled": true
+  },
   "installCommand": "pnpm install",
   "buildCommand": "pnpm build",
   "devCommand": "pnpm dev",
