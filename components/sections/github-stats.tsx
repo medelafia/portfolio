@@ -39,10 +39,9 @@ export function GitHubStatsSection() {
           {/* Stats Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
             {[
-              { icon: Star, label: "Stars Earned", value: "150+" },
-              { icon: GitFork, label: "Repositories", value: "40+" },
-              { icon: Code2, label: "Contributions", value: "500+" },
-              { icon: Activity, label: "Commits", value: "1K+" },
+              { icon: GitFork, label: "Repositories", value: "50+" },
+              { icon: Code2, label: "Contributions", value: "5+" },
+              { icon: Activity, label: "Commits", value: "200+" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -57,40 +56,6 @@ export function GitHubStatsSection() {
               </motion.div>
             ))}
           </div>
-
-          {/* GitHub Stats Images */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="p-4 rounded-xl bg-card border border-border overflow-hidden"
-            >
-              {/* GitHub Stats Card */}
-              <img
-                src={`https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&count_private=true&theme=${statsTheme}&hide_border=true&bg_color=00000000`}
-                alt="GitHub Stats"
-                className="w-full h-auto"
-                loading="lazy"
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="p-4 rounded-xl bg-card border border-border overflow-hidden"
-            >
-              {/* Top Languages Card */}
-              <img
-                src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&layout=compact&theme=${statsTheme}&hide_border=true&bg_color=00000000&langs_count=8`}
-                alt="Top Languages"
-                className="w-full h-auto"
-                loading="lazy"
-              />
-            </motion.div>
-          </div>
-
           {/* Contribution Graph */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
