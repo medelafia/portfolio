@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowDown, FileText, Mail, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -25,12 +26,30 @@ export function HeroSection() {
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Profile Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="mb-8 flex justify-center"
+          >
+            <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl shadow-primary/10">
+              <Image
+                src="/images/profile.jpg"
+                alt="Mohamed El Afia"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </motion.div>
+
           {/* Status Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border mb-8"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border mb-6"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
@@ -72,9 +91,9 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            I architect and build scalable distributed systems, leveraging cloud-native technologies 
-            and AI to create high-performance applications. Passionate about DevOps practices, 
-            microservices architecture, and cutting-edge machine learning solutions.
+            Motivated and detail-oriented software engineer with strong problem-solving skills and practical
+            experience in full-stack web development, cloud technologies, and machine learning. Proficient in
+            modern frameworks including Angular, React.js, Spring Boot, FastAPI, Docker, and Kubernetes.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -127,7 +146,7 @@ export function HeroSection() {
               Technologies I work with
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              {["Kubernetes", "Docker", "AWS", "Spring Boot", "Python", "TensorFlow", "Go", "React"].map((tech, index) => (
+              {["Spring Boot", "Angular", "React.js", "FastAPI", "Docker", "Kubernetes", "AWS", "Python"].map((tech, index) => (
                 <motion.span
                   key={tech}
                   initial={{ opacity: 0, scale: 0.8 }}

@@ -69,21 +69,22 @@ export function AboutSection() {
               className="space-y-6"
             >
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I&apos;m a <span className="text-foreground font-medium">Cloud-Native Software Engineer</span> with 
-                a deep passion for building systems that scale. My journey in tech has led me through the 
-                fascinating worlds of artificial intelligence, DevOps automation, and distributed computing.
+                I&apos;m a <span className="text-foreground font-medium">Cloud-Native Software Engineer</span> currently 
+                pursuing my Master&apos;s degree in Computer Engineering at Faculty of Sciences, Abdelmalek Essaadi University. 
+                My journey in tech has led me through the fascinating worlds of artificial intelligence, DevOps automation, and distributed computing.
               </p>
               
               <p className="text-muted-foreground leading-relaxed">
-                I specialize in designing and implementing microservices architectures that handle 
-                high-traffic workloads while maintaining reliability and performance. My experience 
-                spans from writing efficient backend services to orchestrating complex deployment pipelines.
+                I have a solid understanding of software engineering principles, DevOps practices, and cloud platforms 
+                such as AWS and GCP. Currently working as an R&D Intern at 3D Smart Factory, designing and developing 
+                incident prediction systems for cloud-native applications using Python, FastAPI, Next.js, deep learning, 
+                Prometheus, and Kubernetes.
               </p>
               
               <p className="text-muted-foreground leading-relaxed">
-                When I&apos;m not architecting cloud solutions, you&apos;ll find me exploring the latest 
-                in machine learning research, contributing to open-source projects, or mentoring 
-                fellow developers in modern software practices.
+                Beyond engineering, I&apos;m passionate about teaching. I&apos;ve taught programming fundamentals 
+                to students aged 11-18 and delivered advanced training to adults on data structures, 
+                image processing, and web development.
               </p>
 
               {/* Quick Stats */}

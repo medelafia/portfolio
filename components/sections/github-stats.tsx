@@ -6,7 +6,7 @@ import { Github, Star, GitFork, Code2, Activity } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 
-const GITHUB_USERNAME = "mohamedelafia"
+const GITHUB_USERNAME = "medelafia"
 
 export function GitHubStatsSection() {
   const ref = useRef(null)

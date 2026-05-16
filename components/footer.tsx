@@ -6,17 +6,17 @@ import { Github, Linkedin, Mail, Heart } from "lucide-react"
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/mohamedelafia",
+    href: "https://github.com/medelafia",
     icon: Github,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/mohamedelafia",
+    href: "https://linkedin.com/in/mohamed-el-afia-bb5047286",
     icon: Linkedin,
   },
   {
     name: "Email",
-    href: "mailto:contact@mohamedelafia.dev",
+    href: "mailto:mohamed.elafia8@etu.uae.ac.ma",
     icon: Mail,
   },
 ]

@@ -5,36 +5,36 @@ import { useRef } from "react"
 
 const skillCategories = [
   {
-    title: "Programming Languages",
-    skills: ["Java", "Python", "TypeScript", "Go", "JavaScript", "C/C++", "SQL"],
-  },
-  {
     title: "Backend",
-    skills: ["Spring Boot", "FastAPI", "Node.js", "Express", "NestJS", "Django", "gRPC"],
+    skills: ["Java / Java EE", "Python", "Spring Boot", "Hibernate", "FastAPI", "Flask", "Spring Security", "Spring Cloud", "JWT", "OAuth2", "Keycloak"],
   },
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "Angular", "Vue.js", "Tailwind CSS", "Flutter"],
+    skills: ["HTML / CSS / JS", "Angular", "React.js", "Bootstrap", "PrimeNG", "Material UI"],
   },
   {
     title: "DevOps & Cloud",
-    skills: ["Docker", "Kubernetes", "AWS", "GCP", "Azure", "Terraform", "Jenkins", "GitHub Actions", "ArgoCD"],
-  },
-  {
-    title: "AI / Machine Learning",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "OpenCV", "NLP", "LangChain", "Hugging Face"],
+    skills: ["Git / GitHub", "Docker", "GitHub Actions", "Kubernetes", "Prometheus", "AWS (ECR, EKS, S3, EC2)", "Azure", "GCP", "Aiven"],
   },
   {
     title: "Databases",
-    skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Elasticsearch", "Cassandra", "Neo4j"],
+    skills: ["MySQL", "Oracle", "PostgreSQL", "MongoDB", "Cassandra", "Redis", "Neo4j", "InfluxDB"],
   },
   {
-    title: "Monitoring & Observability",
-    skills: ["Prometheus", "Grafana", "ELK Stack", "Jaeger", "Datadog", "New Relic"],
+    title: "AI / Machine Learning",
+    skills: ["TensorFlow", "Scikit-learn", "Pandas", "Image Processing", "KNN", "Sentiment Analysis"],
   },
   {
-    title: "Message Queues & Streaming",
-    skills: ["Apache Kafka", "RabbitMQ", "Redis Streams", "AWS SQS"],
+    title: "Programming & Scripting",
+    skills: ["C", "Shell", "PHP", "C#"],
+  },
+  {
+    title: "Mobile Development",
+    skills: ["Android Studio", "XML", "Flutter"],
+  },
+  {
+    title: "Message Queues & Caching",
+    skills: ["Apache Kafka", "Redis"],
   },
 ]
 

@@ -10,21 +10,21 @@ import { cn } from "@/lib/utils"
 const socialLinks = [
   {
     name: "Email",
-    href: "mailto:contact@mohamedelafia.dev",
+    href: "mailto:mohamed.elafia8@etu.uae.ac.ma",
     icon: Mail,
-    value: "contact@mohamedelafia.dev",
+    value: "mohamed.elafia8@etu.uae.ac.ma",
   },
   {
     name: "GitHub",
-    href: "https://github.com/mohamedelafia",
+    href: "https://github.com/medelafia",
     icon: Github,
-    value: "github.com/mohamedelafia",
+    value: "github.com/medelafia",
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/mohamedelafia",
+    href: "https://linkedin.com/in/mohamed-el-afia-bb5047286",
     icon: Linkedin,
-    value: "linkedin.com/in/mohamedelafia",
+    value: "linkedin.com/in/mohamed-el-afia",
   },
 ]
 
@@ -100,7 +100,7 @@ export function ContactSection() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <MapPin className="w-5 h-5 text-primary" />
-                    <span>Morocco (Open to Remote)</span>
+                    <span>Essaouira, Morocco (Open to Remote)</span>
                   </div>
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <Clock className="w-5 h-5 text-primary" />
