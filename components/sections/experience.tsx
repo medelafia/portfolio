@@ -19,10 +19,23 @@ interface TimelineItem {
 const timeline: TimelineItem[] = [
   {
     type: "work",
+    title: "Backend Engineer Intern",
+    organization: "S B Solutions",
+    location: "Morocco",
+    period: "July 2026 - Aug 2026",
+    description: "Developed 12+ REST APIs handling 5K+ daily requests with <200ms average response time..",
+    highlights: [
+      "Integrate Redis, RabbitMQ, MinIO, Spring Security, and JWT for caching, asynchronous communication, file storage, and access control.",
+      "Contribute to API testing, database migrations, pull-request reviews, CI/CD practices, monitoring, and backend documentation in a collaborative team."
+    ],
+    current: false,
+  }, 
+  {
+    type: "work",
     title: "Research & Development Intern",
     organization: "3D Smart Factory",
     location: "Morocco",
-    period: "Feb 2026 - Present",
+    period: "Feb 2026 - July 2026",
     description: "Designing and developing incident prediction systems for cloud-native applications using modern technologies.",
     highlights: [
       "Developed incident prediction system using Python and FastAPI",
@@ -30,7 +43,7 @@ const timeline: TimelineItem[] = [
       "Implemented deep learning models for predictive analytics",
       "Deployed solutions on Kubernetes with Prometheus monitoring",
     ],
-    current: true,
+    current: false,
   },
   {
     type: "work",

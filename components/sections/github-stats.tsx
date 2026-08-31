@@ -68,6 +68,7 @@ export function GitHubStatsSection() {
               alt="Contribution Graph"
               className="w-full h-auto"
               loading="lazy"
+              suppressHydrationWarning
             />
           </motion.div>
 

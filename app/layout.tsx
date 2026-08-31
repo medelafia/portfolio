@@ -1,70 +1,141 @@
-import type { Metadata, Viewport } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
-import { ThemeProvider } from '@/components/theme-provider'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import type { Metadata, Viewport } from "next"
+import { Inter, JetBrains_Mono } from "next/font/google"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Analytics } from "@vercel/analytics/next"
+import "./globals.css"
+import { PersonJsonLd } from "@/components/seo/person-json-ld"
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 })
 
-const jetbrainsMono = JetBrains_Mono({ 
-  subsets: ['latin'],
-  variable: '--font-mono',
-  display: 'swap',
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
 })
+
+const siteUrl = "https://mohamedelafia.vercel.app"
 
 export const metadata: Metadata = {
-  title: 'Mohamed El Afia | Cloud-Native Software Engineer',
-  description: 'Cloud-Native Software Engineer specializing in AI, DevOps, Microservices, Distributed Systems, and Cloud Computing. Building scalable systems that power modern applications.',
-  keywords: ['Software Engineer', 'Cloud Native', 'DevOps', 'AI', 'Machine Learning', 'Microservices', 'Kubernetes', 'Docker', 'Spring Boot', 'Next.js'],
-  authors: [{ name: 'Mohamed El Afia' }],
-  creator: 'Mohamed El Afia',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://mohamedelafia.dev',
-    siteName: 'Mohamed El Afia Portfolio',
-    title: 'Mohamed El Afia | Cloud-Native Software Engineer',
-    description: 'Cloud-Native Software Engineer specializing in AI, DevOps, Microservices, and Cloud Computing.',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Mohamed El Afia - Cloud-Native Software Engineer',
-      },
-    ],
+  metadataBase: new URL(siteUrl),
+
+  title: {
+    default:
+      "Mohamed El Afia | Cloud-Native Software Engineer",
+    template: "%s | Mohamed El Afia",
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Mohamed El Afia | Cloud-Native Software Engineer',
-    description: 'Cloud-Native Software Engineer specializing in AI, DevOps, Microservices, and Cloud Computing.',
-    images: ['/og-image.png'],
+
+  description:
+    "Mohamed El Afia is a Cloud-Native Software Engineer specializing in AI, DevOps, Kubernetes, distributed systems, microservices, and full-stack development.",
+
+  keywords: [
+    "Mohamed El Afia",
+    "Software Engineer",
+    "Cloud-Native Software Engineer",
+    "Cloud Engineer",
+    "DevOps Engineer",
+    "AI Engineer",
+    "Machine Learning Engineer",
+    "Full Stack Developer",
+    "Backend Developer",
+    "Kubernetes",
+    "Docker",
+    "Microservices",
+    "Distributed Systems",
+    "Spring Boot",
+    "Next.js",
+    "FastAPI",
+    "Python",
+    "Java",
+    "TypeScript",
+  ],
+
+  authors: [
+    {
+      name: "Mohamed El Afia",
+      url: siteUrl,
+    },
+  ],
+
+  creator: "Mohamed El Afia",
+  publisher: "Mohamed El Afia",
+
+  alternates: {
+    canonical: "/",
   },
+
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Mohamed El Afia Portfolio",
+
+    title:
+      "Mohamed El Afia | Cloud-Native Software Engineer",
+
+    description:
+      "Cloud-Native Software Engineer specializing in AI, DevOps, Kubernetes, distributed systems, microservices, and full-stack development.",
+
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt:
+          "Mohamed El Afia - Cloud-Native Software Engineer",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Mohamed El Afia | Cloud-Native Software Engineer",
+
+    description:
+      "Cloud-Native Software Engineer specializing in AI, DevOps, Kubernetes, distributed systems, and full-stack development.",
+
+    images: ["/og-image.png"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f8fafc' },
-    { media: '(prefers-color-scheme: dark)', color: '#0a0a0f' },
-  ],
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 5,
+
+  themeColor: [
+    {
+      media: "(prefers-color-scheme: light)",
+      color: "#f8fafc",
+    },
+    {
+      media: "(prefers-color-scheme: dark)",
+      color: "#0a0a0f",
+    },
+  ],
 }
 
 export default function RootLayout({
@@ -73,8 +144,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans antialiased bg-background">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
+    >
+      <body className="bg-background font-sans antialiased">
+        <PersonJsonLd />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -83,7 +159,10 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+
+        {process.env.NODE_ENV === "production" && (
+          <Analytics />
+        )}
       </body>
     </html>
   )
