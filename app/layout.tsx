@@ -59,6 +59,11 @@ export const metadata: Metadata = {
       url: siteUrl,
     },
   ],
+  verification: {
+    google:
+      "VZjpXfiMR7c9rxFXSplnWG1CEu6gcSTFZNqXPLEc5aQ",
+  },
+
 
   creator: "Mohamed El Afia",
   publisher: "Mohamed El Afia",
