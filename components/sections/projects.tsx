@@ -231,7 +231,7 @@ const projects: Project[] = [
     github:
       "https://github.com/medelafia/AI-Diagno",
     demo : 
-      "https://ai-doctor-wgkb.vercel.app/",
+      "https://ai-doctor-xi.vercel.app",
     images: [
       "/projects/ai_diagno/1.png",
       "/projects/ai_diagno/2.png",
