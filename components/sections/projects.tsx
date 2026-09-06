@@ -206,7 +206,7 @@ const projects: Project[] = [
     category: ["fullstack", "ai"],
     github:
       "https://github.com/medelafia/Resumind",
-    demo: "https://puter.com/app/resumind-8sa3" ,
+    demo: "https://gentle-sun-36389.puter.site" ,
     images: [
       "/projects/resumind/1.png",
       "/projects/resumind/2.png",
