@@ -232,9 +232,7 @@ const projects: Project[] = [
     images: [
       "/projects/ai_diagno/1.png",
       "/projects/ai_diagno/2.png",
-      "/projects/ai_diagno/3.png",
-      "/projects/ai_diagno/4.png",
-      "/projects/ai_diagno/5.png",
+      "/projects/ai_diagno/3.png"
     ],
   }
 ]
@@ -270,7 +268,7 @@ function ProjectImageSlider({
       setCurrentIndex(
         (prev) => (prev + 1) % images.length
       )
-    }, 4000)
+    }, 8000)
 
     return () => clearInterval(interval)
   }, [images.length])
