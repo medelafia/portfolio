@@ -211,7 +211,32 @@ const projects: Project[] = [
       "/projects/resumind/4.png",
       "/projects/resumind/5.png",
     ],
-  },
+  },{
+    title: "AI-Diagno",
+    description:
+      "AI-powered tool for preliminary symptom analysis and diagnostic insights.", 
+    longDescription:
+      "Ai-Doctor combines physician expertise with machine learning to provide accurate, evidence‑based diagnostic suggestions based on your selected symptoms and lab results. Users can add symptoms, and the system analyzes them against clinical data to generate condition explanations, recommended precautions, and relevant medical insights. The platform is designed for educational purposes only — it helps you understand possible causes and next steps, but always reminds you to consult a healthcare provider for official diagnosis and treatment.", 
+    techStack: [
+      "React.js",
+      "AI",
+      "Neural networks" , 
+      "FastApi", 
+      "Deep learning"
+    ],
+    category: ["fullstack", "ai"],
+    github:
+      "https://github.com/medelafia/AI-Diagno",
+    demo : 
+      "https://ai-doctor-wgkb.vercel.app/",
+    images: [
+      "/projects/ai_diagno/1.png",
+      "/projects/ai_diagno/2.png",
+      "/projects/ai_diagno/3.png",
+      "/projects/ai_diagno/4.png",
+      "/projects/ai_diagno/5.png",
+    ],
+  }
 ]
 
 const categories: {
