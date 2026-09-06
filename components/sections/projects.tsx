@@ -143,21 +143,23 @@ const projects: Project[] = [
 
   {
     title: "Hospital Management System",
-    description:
-      "AI-driven disease prediction platform using deep learning models.",
-    longDescription:
-      "Personal project featuring a React.js frontend styled with Bootstrap, a FastAPI backend for high-performance asynchronous APIs, and AI-driven disease prediction models built in Python using TensorFlow and Scikit-learn.",
+    description: "Hospital Management System for managing patients, doctors, and appointments efficiently.",
+    longDescription: "A full-stack Hospital Management System that centralizes patient records, doctor scheduling, and appointment tracking. Built with Spring Boot and Spring MVC for core backend logic, FastAPI for lightweight integration services, and MySQL for data storage. The responsive frontend uses Bootstrap, HTML, CSS, and JavaScript, delivering an intuitive dashboard for hospital staff to reduce manual workload and improve care coordination.",
     techStack: [
-      "React.js",
-      "Bootstrap",
+      "Spring MVC",
+      "Spring Boot",
+      "MySQL",
       "FastAPI",
-      "TensorFlow",
-      "Scikit-learn",
-      "Python",
-    ],
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ], 
     category: ["ai", "fullstack"],
     github:
-      "https://github.com/medelafia/ai-doctor-backend",
+      "https://github.com/medelafia/Hospital-management-system",
+    demo : 
+      "https://hospital-management-system-lkgs.onrender.com",
     images: [
       "/projects/hospital_management/1.png",
       "/projects/hospital_management/2.png",
@@ -204,6 +206,7 @@ const projects: Project[] = [
     category: ["fullstack", "ai"],
     github:
       "https://github.com/medelafia/Resumind",
+    demo: "https://puter.com/app/resumind-8sa3" ,
     images: [
       "/projects/resumind/1.png",
       "/projects/resumind/2.png",
